@@ -1,35 +1,4 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-	<title>Profbud</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/script.js"></script>
-</head>
-
-<body>
-
-<header id="header">
-<div class="box">
-	<div class="logo">
-		<img src="images/logo.png" alt="Profbud">
-	</div><!--logo-->
-	<div class="header_middle">
-		<div class="site_description">строительные и другие работы</div>
-		<div class="site_description_hint">в Киеве и Киевской области</div>
-	</div>
-	<div class="header_right">
-		<div class="telephone"> +38 (095) 350 92 46</div>
-	</div>
-
-	<div class="adaptive_menu" id="adaptive_menu"></div>
-</div>
-</header>
-
-<main>
+<?php get_header(); ?>
 <section>
 <div class="first_bg">
 	<div class="dark_bg_for_video">
@@ -451,14 +420,4 @@
 </div>
 </div><!--box-->
 </section>
-</main>
-
-<footer>
-<div class="footer_bottom">
-	<p>Профбуд 2019</p>
-	<p><a href="#">Политика конфиденциальности</a></p>
-</div><!--footer_bottom-->
-</footer>
-
-</body>
-</html>
+<?php get_footer(); ?>
