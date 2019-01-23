@@ -9,7 +9,7 @@ function my_acf_init() {
         // register blocks
         acf_register_block(array(
             'name'              => 'blog',
-            'title'             => __('Blog unitrack'),
+            'title'             => __('Blog profbud'),
             'description'       => __('A custom blog block.'),
             'render_callback'   => 'custom_block_render_callback',
             'category'          => 'formatting',
@@ -19,7 +19,7 @@ function my_acf_init() {
 
         acf_register_block(array(
             'name'              => 'calltoaction',
-            'title'             => __('Calltoaction unitrack'),
+            'title'             => __('Calltoaction profbud'),
             'description'       => __('A custom calltoaction block.'),
             'render_callback'   => 'custom_block_render_callback',
             'category'          => 'formatting',
@@ -29,7 +29,7 @@ function my_acf_init() {
 
         acf_register_block(array(
             'name'              => 'gps',
-            'title'             => __('Gps unitrack'),
+            'title'             => __('Gps profbud'),
             'description'       => __('A custom satelite block.'),
             'render_callback'   => 'custom_block_render_callback',
             'category'          => 'formatting',
@@ -39,7 +39,7 @@ function my_acf_init() {
 
         acf_register_block(array(
             'name'              => 'mainscreen',
-            'title'             => __('Mainscreen unitrack'),
+            'title'             => __('Mainscreen profbud'),
             'description'       => __('A custom mainscreen block.'),
             'render_callback'   => 'custom_block_render_callback',
             'category'          => 'formatting',
@@ -49,7 +49,7 @@ function my_acf_init() {
 
         acf_register_block(array(
             'name'              => 'mobile',
-            'title'             => __('Mobile unitrack'),
+            'title'             => __('Mobile profbud'),
             'description'       => __('A custom mobile block.'),
             'render_callback'   => 'custom_block_render_callback',
             'category'          => 'formatting',
@@ -59,7 +59,7 @@ function my_acf_init() {
 
         acf_register_block(array(
             'name'              => 'partners',
-            'title'             => __('Partners unitrack'),
+            'title'             => __('Partners profbud'),
             'description'       => __('A custom technologies block.'),
             'render_callback'   => 'custom_block_render_callback',
             'category'          => 'formatting',
@@ -69,7 +69,7 @@ function my_acf_init() {
 
         acf_register_block(array(
             'name'              => 'posibility',
-            'title'             => __('Posibility unitrack'),
+            'title'             => __('Posibility profbud'),
             'description'       => __('A custom posibility block.'),
             'render_callback'   => 'custom_block_render_callback',
             'category'          => 'formatting',
@@ -79,7 +79,7 @@ function my_acf_init() {
 
         acf_register_block(array(
             'name'              => 'stages',
-            'title'             => __('Stages unitrack'),
+            'title'             => __('Stages profbud'),
             'description'       => __('A custom stage block.'),
             'render_callback'   => 'custom_block_render_callback',
             'category'          => 'formatting',
@@ -89,7 +89,7 @@ function my_acf_init() {
 
         acf_register_block(array(
             'name'              => 'statistics',
-            'title'             => __('Statistics unitrack'),
+            'title'             => __('Statistics profbud'),
             'description'       => __('A custom statistics block.'),
             'render_callback'   => 'custom_block_render_callback',
             'category'          => 'formatting',
