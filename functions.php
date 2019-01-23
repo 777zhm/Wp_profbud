@@ -59,8 +59,8 @@ add_filter( 'script_loader_tag', 'profbud_script_loader_tag', 10, 2 );
 
 if( function_exists('acf_add_options_page') ){
 	$parent = acf_add_options_page(array(
-		'page_title'    => 'Theme settings',
-		'menu_title'    => 'Theme settings',
+		'page_title'    => 'Настройки темы',
+		'menu_title'    => 'Настройки темы',
 		'redirect'      => false,
 		'menu_slug'     => 'theme-settings',
 		'post_id' => 'theme_settings',

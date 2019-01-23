@@ -24,11 +24,11 @@
 		<div class="site_description_hint">в Киеве и Киевской области</div>
 	</div>
 	<div class="header_right">
-		<div class="telephone"> +38 (095) 350 92 46</div>
+		<div class="telephone">063-888-77-99</div>
 	</div>
 
 	<div class="adaptive_menu" id="adaptive_menu"></div>
 </div>
 </header>
 
-<main>
+<main id="main" class="site-main" role="main">
