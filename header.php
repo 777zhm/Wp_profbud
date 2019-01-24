@@ -26,8 +26,6 @@
 	<div class="header_right">
 		<div class="telephone"><?php the_field('telephone', 'theme_settings'); ?></div>
 	</div>
-
-	<div class="adaptive_menu" id="adaptive_menu"></div>
 </div>
 </header>
 
