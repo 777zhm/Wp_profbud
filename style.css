@@ -10,21 +10,17 @@ Text Domain: profbud
 
 @font-face {
     font-family: 'Gilroy';
-    src: local('Gilroy Light'), 
-    local('Gilroy-Light'), 
-    url('/fonts/Gilroylight.woff2') format('woff2'),
-    url('/fonts/Gilroylight.woff') format('woff'),
-    url('/fonts/Gilroylight.ttf') format('truetype');
+    src: url('assets/fonts/Gilroylight.woff2') format('woff2'),
+    url('assets/fonts/Gilroylight.woff') format('woff'),
+    url('assets/fonts/Gilroylight.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'Gilroy';
-    src: local('Gilroy ExtraBold'), 
-    local('Gilroy-ExtraBold'), 
-    url('/fonts/Gilroyextrabold.woff2') format('woff2'), 
-    url('/fonts/Gilroyextrabold.woff') format('woff'), 
-    url('/fonts/Gilroyextrabold.ttf') format('truetype');
+    src: url('assets/fonts/Gilroyextrabold.woff2') format('woff2'), 
+    url('assets/fonts/Gilroyextrabold.woff') format('woff'), 
+    url('assets/fonts/Gilroyextrabold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
@@ -56,12 +52,6 @@ h1, h2{
 }
 h1{
 	padding:80px 0 30px;
-}
-
-.about_page .dark_bg_for_video h1{
-	padding:20px 0 90px;
-	font-size:120px;
-
 }
 
 h2.white{
@@ -313,7 +303,7 @@ header .header_right .telephone{
 
 .first_block_description .arrow_bottom{
 	margin-top:80px;
-	background-image: url(images/arrow_bottom.png);
+	background-image: url(assets/img/arrow_bottom.png);
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -447,7 +437,7 @@ header .header_right .telephone{
 	background-position: center top;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-image: url(images/portfolio_bg.jpg);
+	background-image: url(assets/img/portfolio_bg.jpg);
 	position:relative;
 	padding:60px 0 170px;
 
@@ -546,7 +536,7 @@ header .header_right .telephone{
 }
 
 .paсkages_bg{
-	background-image: url(images/space_bg.jpg);
+	background-image: url(assets/img/space_bg.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -626,7 +616,7 @@ header .header_right .telephone{
 	vertical-align: top;
 	width:80px;
 
-	background-image: url(images/red_left_arrow.png);
+	background-image: url(assets/img/red_left_arrow.png);
 	background-size: contain;
 	background-position: right center;
 	background-repeat: no-repeat;
@@ -683,7 +673,7 @@ header .header_right .telephone{
 }
 
 .media_bg{
-	background-image: url(images/media_bg.jpg);
+	background-image: url(assets/img/media_bg.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -733,42 +723,8 @@ header .header_right .telephone{
 	padding:30px 0;
 }
 
-.what_you_get .what_you_get_item{
-	display:inline-block;
-	vertical-align: top;
-	margin:20px 1% 50px;
-	width:30%;
-}
-
-.what_you_get .what_you_get_item .red_number{
-	color:#eb6236;
-	font-family: 'Gilroy';
-	font-size:36px;
-	padding:3px 40px 3px 0;
-	display:inline-block;
-	vertical-align: top;
-	width:80px;
-
-	background-image: url(images/red_left_arrow.png);
-	background-size: contain;
-	background-position: right center;
-	background-repeat: no-repeat;
-}
-
-.what_you_get .what_you_get_item .what_you_get_item_description{
-	display:inline-block;
-	font-size:16px;
-	vertical-align: top;
-	padding: 0 0 0 10px;
-
-	width: calc(100% - 85px);
-	width: -moz-calc(100% - 85px);
-	width: -webkit-calc(100% - 85px);
-
-}
-
 .results_bg{
-	background-image: url(images/media_bg.jpg);
+	background-image: url(assets/img/media_bg.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -799,7 +755,6 @@ header .header_right .telephone{
 	color:#ffffff;
 }
 
-
 .resutls_list .one_result_number .number{
 	font-size: 63px;
 	padding:50px 0;
@@ -808,13 +763,11 @@ header .header_right .telephone{
 
 } 
 
-
 .resutls_list .one_result_description{
 	color:#ffffff;
 	font-size:18px;
 	padding:30px 0;
 }
-
 
 .contact_us{
 	text-align: center;
@@ -831,13 +784,11 @@ header .header_right .telephone{
 	text-align: center;
 }
 
-
 .contact_us .red_text{
 	color:#1b18af;
 	font-size:36px;
 	padding:0 0 60px;
 }
-
 
 .contact_us .phone{
 	display:inline-block;
@@ -848,128 +799,18 @@ header .header_right .telephone{
 	padding:10px 0 10px 50px;
 	margin-bottom:30px;
 
-	background-image: url(images/phone_icon.png);
+	background-image: url(assets/img/phone_icon.png);
 	background-size: auto;
 	background-position: left center;
 	background-repeat: no-repeat;
-
 }
 
 .text{
 	padding:80px 0 ;
 }
 
-
-.about_bg{
-	background:#f5f5f5;
-	position:relative;
-	padding:180px 0;
-}
-
-.about_list .about_item{
-	width:24%;
-	margin:20px 4%;
-	display:inline-block;
-}
-.about_item_image{
-	height:80px;
-	margin-bottom:30px;
-	text-align: center;
-}
-
-.about_item_image img{
-	max-width:100%;
-	max-height:100%;
-}
-
-
-.about_list .about_item_title{
-	font-size:24px;
-	text-align: center;
-	padding:20px 0;
-}
-
-.about_list ul.about_item_points{
-	list-style: none;
-}
-
-.about_list ul.about_item_points li{
-	background-image: url(images/point.png);
-	background-repeat: no-repeat;
-	background-size: auto;
-	background-position: left top;
-	padding:0 0 15px 45px;
-}
-
-
-.clients_bg{
-	background:#f5f5f5;
-	position:relative;
-	padding:60px 0 200px;
-}
-
-
-.clients_list{
-
-}
-.clients_list .one_client{
-	display:inline-block;
-	width:22%;
-	margin:20px 1%;
-	position:relative;
-	height:80px;
-}
-
-.clients_list .one_client img{
-	position:absolute;
-	left:0;
-	right:0;
-	top:0;
-	bottom:0;
-	margin:auto;
-	max-height:100%;
-	max-width:100%;
-}
-
-.recomendations{
-	padding:80px 0;
-	display:table;
-	width:100%;
-
-}
-
-.recomendations .one_recomendation{
-	display:inline-block;
-	width:50%;
-	padding:30px;
-}
-
-.recomendations .one_recomendation_image{
-	padding-bottom:30px;
-}
-
-.recomendations .one_recomendation_title{
-	font-size:24px;
-	padding-bottom:15px;
-}
-
-
-.recomendations .one_recomendation:nth-child(4n + 1){
-	border-right:1px solid #b8b8b8;
-	border-bottom:1px solid #b8b8b8;
-}
-
-.recomendations .one_recomendation:nth-child(4n + 2){
-	border-bottom:1px solid #b8b8b8;
-}
-
-.recomendations .one_recomendation:nth-child(4n + 3){
-	border-right:1px solid #b8b8b8;
-}
-
-
 .contacts_bg{
-	background-image: url(images/media_bg.jpg);
+	background-image: url(assets/img/media_bg.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -983,7 +824,7 @@ header .header_right .telephone{
 }
 
 .white_phone{
-	background-image: url(images/phone_icon_white.png);
+	background-image: url(assets/img/phone_icon_white.png);
 	background-size: auto;
 	background-position: left center;
 	background-repeat: no-repeat;
@@ -995,7 +836,7 @@ header .header_right .telephone{
 }
 
 .white_mail{
-	background-image: url(images/mail_icon_white.png);
+	background-image: url(assets/img/mail_icon_white.png);
 	background-size: auto;
 	background-position: left center;
 	background-repeat: no-repeat;
@@ -1005,7 +846,6 @@ header .header_right .telephone{
 	display: inline-block;
 	font-size:30px;
 }
-
 
 .map{
 	width:100%;
@@ -1023,7 +863,6 @@ header .header_right .telephone{
 }
 
 /*---FOOTER---*/
-
 .grey_footer_triangle{
 
 	width: 0;
@@ -1057,7 +896,7 @@ header .header_right .telephone{
 	font-size:24px;
 	padding:2px 0 2px 40px;
 
-	background-image: url(images/phone_icon.png);
+	background-image: url(assets/img/phone_icon.png);
 	background-size: auto 80%;
 	background-position: left center;
 	background-repeat: no-repeat;
@@ -1067,12 +906,11 @@ header .header_right .telephone{
 	font-size:18px;
 	padding:2px 0 2px 40px;
 
-	background-image: url(images/mail_icon.png);
+	background-image: url(assets/img/mail_icon.png);
 	background-size: auto 80%;
 	background-position: left center;
 	background-repeat: no-repeat;
 }
-
 
 .footer_social .one_social_button{
 	height:26px;
@@ -1085,19 +923,18 @@ header .header_right .telephone{
 }
 
 .footer_social .one_social_button.fb_button{
-	background-image:url(images/social_grey_fb.png);
+	background-image:url(assets/img/social_grey_fb.png);
 }
 .footer_social .one_social_button.telegram_button{
-	background-image:url(images/social_grey_telegram.png);
+	background-image:url(assets/img/social_grey_telegram.png);
 }
 .footer_social .one_social_button.viber_button{
-	background-image:url(images/social_grey_viber.png);
+	background-image:url(assets/img/social_grey_viber.png);
 }
 
 .footer_link a{
 	color:#000000;
 }
-
 
 .footer_bottom{
 	background:#dedede;
@@ -1122,8 +959,6 @@ header .header_right .telephone{
 	text-decoration: underline;
 }
 
-
-
 .adaptive_menu{
 	display: none;
 }
@@ -1138,7 +973,6 @@ header .header_right .telephone{
 .footer_item{
 	margin: 10px 1.5%;
 }
-
 
 } /*max-width: 1150px*/
 
@@ -1201,10 +1035,6 @@ header .header_right .telephone{
 	margin: 15px 5%;
 }
 
-.about_page .dark_bg_for_video h1{
-    font-size: 12vw;
-}
-
 } /*max-width: 960px*/
 
 
@@ -1219,15 +1049,11 @@ header{
 	padding:150px 0 100px;
 }
 
-
-
 .resutls_list .one_result{
     width: 40%;
     margin: 15px 4%;
 }
 
-.about_list .about_item,
-.what_you_get .what_you_get_item,
 .paсkages_content .one_package_item{
 
     margin: 20px 2%;
@@ -1279,14 +1105,13 @@ header{
 	width:31px;
 	height:28px;
 	background-size: contain;
-	background-image: url(images/adaptive_menu.png);
+	background-image: url(assets/img/adaptive_menu.png);
 	background-repeat: no-repeat;
 	float:right;
 	margin:25px 20px 0;
 	z-index: 10;
 	position: relative;
 }
-
 
 header .main_menu{
 	display:block;
@@ -1335,10 +1160,6 @@ header .header_right{
 	float: none;
 	display: inline-block;
 	margin-left:20px;
-}
-
-.about_bg{
-	padding:90px 0 160px;
 }
 
 
@@ -1422,7 +1243,6 @@ header.open_menu .header_right{
     padding: 3px 25px 3px 0;
 }
 
-.what_you_get .what_you_get_item,
 .paсkages_content .one_package_item{
 
     margin: 20px auto;
@@ -1433,33 +1253,6 @@ header.open_menu .header_right{
 .text_with_big_image .text h2{
 	font-size:45px;
 }
-
-
-.clients_list .one_client{
-    width: 45%;
-    margin: 20px 2%;
-}
-
-.recomendations{
-	display:block;
-	padding: 0 0 20px;
-}
-
-.recomendations .one_recomendation{
-	display:block;
-	width:100%;
-	border-right:none !important;
-	border-left:none !important;
-	border-bottom:1px solid #b8b8b8;
-
-}
-
-
-.recomendations .one_recomendation:last-child{
-	border-bottom:none;
-
-}
-
 
 } /*max-width: 560px*/
 
@@ -1504,15 +1297,6 @@ h3{
 .work_steps .one_work_step{
     width: 100%;
     margin: 20px auto;
-}
-.about_list .about_item{
-    width: 100%;
-    margin: 10px auto;
-
-}
-
-.about_item_image{
-    margin-bottom: 10px;
 }
 
 .resutls_list .one_result,

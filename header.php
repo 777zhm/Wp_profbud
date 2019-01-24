@@ -20,11 +20,11 @@
 		<img class="img img-fluid" src="<?php echo $image[0]; ?>" alt="logotype">
 	</div><!--logo-->
 	<div class="header_middle">
-		<div class="site_description">строительные и другие работы</div>
-		<div class="site_description_hint">в Киеве и Киевской области</div>
+		<div class="site_description"><?php bloginfo('description'); ?></div>
+		<div class="site_description_hint"><?php the_field('site_description_hint', 'theme_settings'); ?></div>
 	</div>
 	<div class="header_right">
-		<div class="telephone">063-888-77-99</div>
+		<div class="telephone"><?php the_field('telephone', 'theme_settings'); ?></div>
 	</div>
 
 	<div class="adaptive_menu" id="adaptive_menu"></div>

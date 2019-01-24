@@ -1,14 +1,15 @@
+<?php $image = get_field('image'); ?>
 <section>
-<div class="box text_with_big_image">
-	<div class="text">
-		<h2>есть вопросы? <strong>оставьте заявку!</strong></h2>
-		<div class="content">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+	<div class="box text_with_big_image">
+		<div class="text">
+			<h2><?php the_field('heading_1');?><strong><?php the_field('heading_2');?></strong></h2>
+			<div class="content"><?php the_field('editor');?></div>
+			<div class="red_button call_form"><?php the_field('button_text');?></div>
 		</div>
-		<div class="red_button call_form">Консультация</div>
-	</div>
-	<div class="image">
-		<img src="images/comp.png">
-	</div>
-</div><!--box-->
+		<div class="image">
+			<?php if($image): ?>  
+			<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" >
+			<?php endif; ?>
+		</div>
+	</div><!--box-->
 </section>
