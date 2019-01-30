@@ -263,6 +263,74 @@ header .header_right .telephone{
 	font-size: 20px;
 }
 
+/*** Start Main menu navigation ***/
+
+.burger_icon_box{
+	position: fixed;
+	top: 10px;
+	right: 10px;
+}
+
+.burger_icon{
+	font-size: 36px;
+	cursor: pointer;
+	padding: 12px 18px 12px 18px ;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay_menu {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .burger_icon_close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .burger_icon_close {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+/*** End Main menu navigation ***/
+
 .first_bg{
 	position:relative;
 	overflow: hidden;
@@ -301,8 +369,16 @@ header .header_right .telephone{
 	border:2px solid #eb6236;
 }
 
+.first_block_description .arrow_bottom_ms{
+	margin-top:60px;
+	padding: 30px;
+	width: 124px;
+	text-align: center;
+	display:inline-block;
+}
+
 .first_block_description .arrow_bottom{
-	margin-top:80px;
+
 	background-image: url(assets/img/arrow_bottom.png);
 	background-size: contain;
 	background-position: center;
@@ -381,8 +457,18 @@ header .header_right .telephone{
 	overflow-x: hidden;
 }
 
+.services_bg{
+	background-image: url(assets/img/space_bg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position:relative;
+	padding:20px 0 40px;
+}
+
+
 .services_list{
-	margin:40px 0;
+	margin:80px 0;
 	text-align: center;
 }
 
@@ -520,8 +606,42 @@ header .header_right .telephone{
 
 
 .work_steps .one_work_step_image{
-	height:120px;
+	width:170px;
+	height:170px;
+	border:2px solid #ffffff;
+	border-radius: 50%;
+	position:relative;
+	margin:0 auto;
+	color:#ffffff;
+
+	overflow: hidden;
+	position: relative;
+	border: 1px solid #ffffff;
+
+	-webkit-transition: 0.8s;
+  	transition: 0.8s;
 }
+
+.work_steps .one_work_step_image:hover{
+	-webkit-box-shadow: 1px 5px 13px 0px rgba(51,51,51,1);
+	-moz-box-shadow: 1px 5px 13px 0px rgba(51,51,51,1);
+	box-shadow: 1px 5px 13px 0px rgba(51,51,51,1);
+
+	border: 1px solid rgba(51,51,51,0.8);
+}
+
+.work_steps .one_work_step_image img{
+	max-height: 170px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	
+	/*height: 130px;
+	background:rgba(0,0,0,0.4);*/
+} 
 
 .work_steps .one_work_step_title{
 	font-size:18px;
@@ -536,12 +656,12 @@ header .header_right .telephone{
 }
 
 .paсkages_bg{
-	background-image: url(assets/img/space_bg.jpg);
+	/*background-image: url(assets/img/space_bg.jpg);*/
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	position:relative;
-	padding:60px 0 200px;
+	padding:20px 0 40px;
 }
 
 .paсkages_box{
@@ -562,7 +682,7 @@ header .header_right .telephone{
 	width:20%;
 	padding:15px;
 	vertical-align: top;
-	height:90px;
+	height:70px;
 	font-size:17px;
 	cursor:pointer;
 }
@@ -573,8 +693,10 @@ header .header_right .telephone{
 
 .paсkages_list .one_paсkage_title .title{
 	display:inline-block;
-	width:90px;
+	width:150px;
 	vertical-align: middle;
+	font-weight: 600;
+	font-size: 20px;
 }
 
 .paсkages_list .one_paсkage_title .title.big{
@@ -1005,6 +1127,7 @@ header .header_right .telephone{
 
 .popup_form {
 	text-align: center;
+	font-family: 'Lato', sans-serif;
 }
 .popup_form .popup_form_input,
 .popup_form .popup_form_textarea{
@@ -1041,7 +1164,7 @@ header .header_right .telephone{
 	text-transform: uppercase;
 	color:#ffffff;
 	text-align: center;
-	font-family: 'Gilroy Bold';
+	font-family: 'Lato', sans-serif;
 }
 .popup .contacts {
 	margin: 10px auto;
@@ -1092,7 +1215,7 @@ header .header_right .telephone{
 
 .paсkages_list .one_paсkage_title{
     padding: 5px 10px;
-    height: 120px;
+    height: 70px;
     font-size: 16px;
 
 }
@@ -1103,7 +1226,7 @@ header .header_right .telephone{
     padding:0;
     margin:0 auto;
     text-align: center;
-    height: 80px;
+    height: 60px;
 
 }
 
@@ -1274,6 +1397,10 @@ header .header_right{
 }
 
 
+.first_block_description .arrow_bottom_ms{
+	margin-bottom: 35px;
+}
+
 } /*max-width: 840px*/
 
 
@@ -1289,6 +1416,13 @@ header .header_right{
     margin: 20px 2% 40px;
 }
 
+.first_block_description .arrow_bottom_ms{
+	margin-bottom: 35px;
+}
+
+header .header_middle .site_description, header .header_middle .site_description_hint{
+	display: none;
+}
 
 } /*max-width: 720px*/
 
@@ -1365,6 +1499,10 @@ header.open_menu .header_right{
 	font-size:45px;
 }
 
+.first_block_description .arrow_bottom_ms{
+	margin-bottom: 35px;
+}
+
 } /*max-width: 560px*/
 
 
@@ -1375,8 +1513,7 @@ header{
 }
 
 header .logo img{
-	height:60px;
-	width:auto;
+	max-width: 100px;
 }
 
 .adaptive_menu{
@@ -1467,6 +1604,9 @@ h3{
 	    padding: 100px 0 100px;
 }
 
+.first_block_description .arrow_bottom_ms{
+	margin-bottom: 35px;
+}
 
 } /*max-width: 450px*/
 
@@ -1477,5 +1617,8 @@ h3{
 	height: 240px !important;
 }
 
+.first_block_description .arrow_bottom_ms{
+	margin-bottom: 35px;
+}
 
 } /*max-width: 340px*/

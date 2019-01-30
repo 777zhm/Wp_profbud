@@ -1,7 +1,8 @@
 <section>
-<div class="paсkages_bg">
-	<div class="red_triangle_top_left"></div>
-	<div class="white_triangle_top_right"></div>
+<div class="paсkages_bg" id="arrow_bottom_ms_target">
+	<div id="package_section"></div>
+	<!-- <div class="red_triangle_top_left"></div> -->
+	<!-- <div class="white_triangle_top_right"></div> -->
 	<div class="box">
 		<h2><?php the_field('heading');?></h2>
 		<div class="paсkages_box">

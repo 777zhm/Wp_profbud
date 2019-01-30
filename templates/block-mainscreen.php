@@ -7,7 +7,9 @@
 					<p style="text-align:center;"><?php the_field('subheading');?></p>
 					<div class="white_button call_form"><?php the_field('button_text');?></div>
 					<div class="clearfix"></div>
-					<div class="arrow_bottom"></div>
+					<div id="arrow_bottom_ms" class="arrow_bottom_ms">
+						<div class="arrow_bottom"></div>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -1,5 +1,5 @@
 <section>
-	<div class="box">
+	<div id="contact_us_section" class="box">
 		<div class="contact_us">
 			<h2><?php the_field('heading_1');?></h2>
 			<div class="red_text"><?php the_field('heading_2');?></div>

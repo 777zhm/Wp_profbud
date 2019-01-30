@@ -1,6 +1,6 @@
 <?php $image = get_field('image'); ?>
 <section>
-	<div class="box text_with_big_image">
+	<div id="calltoaction_section" class="box text_with_big_image">
 		<div class="text">
 			<h2><?php the_field('heading_1');?><strong><?php the_field('heading_2');?></strong></h2>
 			<div class="content"><?php the_field('editor');?></div>

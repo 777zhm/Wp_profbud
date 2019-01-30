@@ -1,5 +1,5 @@
 <section>
-	<div class="results_bg" style="background-image:url('<?php the_field('image');?>')">
+	<div id="numbers_section" class="results_bg" style="background-image:url('<?php the_field('image');?>')">
 		<div class="white_triangle_top_right"></div>
 		<div class="box">
 			<h2 class="white"><?php the_field('heading');?></h2>

@@ -1,6 +1,44 @@
 (function($) {
 $(document).ready(function() {
 
+// Start MoveToSection button
+	$("#arrow_bottom_ms").click(function() {
+		var headerHeight = $('header').outerHeight();
+		$([document.documentElement, document.body]).animate({
+			scrollTop: ($("#arrow_bottom_ms_target").offset().top - headerHeight - 10) + 'px'
+		}, 400);
+	});
+// End MoveToSection button
+
+// Start Main menu navigation
+function openOverlay() {
+	$('#burger_nav').css("width", "100%");
+};
+
+function closeOverlay() {
+	$('#burger_nav').css("width", "0%");
+};
+
+$('#burger_icon_box').click(function(){
+	openOverlay();
+
+	setTimeout(function() {
+		closeOverlay();
+	}, 6000);
+
+});
+
+$('#burger_icon_close').click(function(){
+	closeOverlay();
+});
+
+$('.overlay_menu a').click(function(){
+	closeOverlay();
+});
+
+// End Main menu navigation
+
+
 
 if($('.portfolio_list').length){
 
