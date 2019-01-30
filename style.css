@@ -599,6 +599,10 @@ header .header_right .telephone{
 	padding:20px;
 }
 
+.paсkages_content .one_package_content.active{
+	display: block;
+}
+
 .paсkages_content .one_package_item{
 	display:inline-block;
 	vertical-align: top;
